@@ -1,11 +1,3 @@
-/*
- * author: Mehmet ASLAN
- * date: February 7, 2017
- *
- * no warranty, no licence agreement
- * use it at your own risk
- */
-
 #include "nrf.h"
 #include "spi1.h"
 #include "delay.h"
@@ -241,7 +233,7 @@ static void nrf_tx_init(void)
 static void nrf_rx_init(void)
 {
 	/* ce high */
-	nrf_ce_low();
+	nrf_ce_high();
 	/* power up rx mode */
 	nrf_write_reg_byte(CONFIG, PRIM_RX | PWR_UP | CRCO | EN_CRC);
 	/* wait to power up */
@@ -272,11 +264,8 @@ void nrf_set_tx_addr(uint32_t tx_addr)
 }
 void nrf_set_rx_addr(uint32_t rx_addr)
 {
-	/* it doesnt let you to change in rx mode */
-	nrf_ce_low();
-	delay(10);
+        /* dont change while you receiving data */
 	nrf_write_reg(RX_ADDR_P1, ((uint8_t *) &rx_addr), 4);
-	nrf_ce_high();
 }
 
 void nrf_send32(uint32_t data)
