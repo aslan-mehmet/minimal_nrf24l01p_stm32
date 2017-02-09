@@ -1,3 +1,11 @@
+/*
+ * author: Mehmet ASLAN
+ * date: February 7, 2017
+ *
+ * no warranty, no licence agreement
+ * use it at your own risk
+ */
+
 #include "board.h"
 
 void board_led_init(void)

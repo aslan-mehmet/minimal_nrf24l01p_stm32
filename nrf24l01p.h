@@ -1,5 +1,9 @@
-/* 
- * date: 2.7.2017
+/*
+ * author: Mehmet ASLAN
+ * date: February 7, 2017
+ *
+ * no warranty, no licence agreement
+ * use it at your own risk
  */
 
 #ifndef __NRF24L0P_H

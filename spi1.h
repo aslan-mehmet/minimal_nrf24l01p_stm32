@@ -1,3 +1,11 @@
+/*
+ * author: Mehmet ASLAN
+ * date: February 7, 2017
+ *
+ * no warranty, no licence agreement
+ * use it at your own risk
+ */
+
 #ifndef __SPI1_H
 #define __SPI1_H
 

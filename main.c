@@ -1,3 +1,11 @@
+/*
+ * author: Mehmet ASLAN
+ * date: February 7, 2017
+ *
+ * no warranty, no licence agreement
+ * use it at your own risk
+ */
+
 #include "stm32f0xx.h"
 #include "board.h"
 #include "nrf.h"
